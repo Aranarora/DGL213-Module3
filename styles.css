@@ -8,5 +8,9 @@
     max-width: 300px;
     background-color: #FFF;
     border: 1px solid #ddd;
-
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    z-index: 999;
 }
