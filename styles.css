@@ -17,3 +17,8 @@
     border-radius: 5px;
     width: 100%;
 }
+
+.leaflet-top .leaflet-control {
+    margin-top: 180px;
+}
+
