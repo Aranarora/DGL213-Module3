@@ -3,3 +3,6 @@ const map = L.map('map').setView([51.505, -0.09], 13);
         const tileUrl = 'https://api.mapbox.com/styles/v1/aroraaran/clot5qbee007c01r60duwcwae/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYXJvcmFhcmFuIiwiYSI6ImNsb3QzdXV3MDA2MjAybG82Y3NlaGZxZTUifQ.L0hJIwM_Lhr2zaQwEcAOpw';
         const tiles = L.tileLayer(tileUrl, { attribution });
         tiles.addTo(map);
+
+
+let marker, circle, zoomed;
