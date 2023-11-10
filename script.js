@@ -16,6 +16,7 @@ function success(position) {
 
     if (marker) {
         map.removeLayer(marker);
+        map.removeLayer(circle);
     }
 
     marker = L.marker([latitude, longitude]).addTo(map);
