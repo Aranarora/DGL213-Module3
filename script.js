@@ -26,5 +26,6 @@ function success(position) {
         zoomed = map.fitBounds(circle.getBounds()); 
     }
 
+    map.setView([latitude, longitude]);
 
 }
