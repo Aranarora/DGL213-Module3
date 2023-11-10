@@ -10,4 +10,8 @@ let marker, circle, zoomed;
 navigator.geolocation.watchPosition(success, error);
 function success(position) {
 
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    const accuracy = position.coords.accuracy;
+
 }
