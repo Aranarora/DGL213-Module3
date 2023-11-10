@@ -14,6 +14,10 @@ function success(position) {
     const longitude = position.coords.longitude;
     const accuracy = position.coords.accuracy;
 
+    if (marker) {
+        map.removeLayer(marker);
+    }
+
     marker = L.marker([latitude, longitude]).addTo(map);
     circle = L.circle([latitude, longitude], { radius: accuracy }).addTo(map);
 
