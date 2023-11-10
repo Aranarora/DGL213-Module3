@@ -29,3 +29,9 @@ function success(position) {
     map.setView([latitude, longitude]);
 
 }
+function error(error) {
+
+    if (error.code === 1) {
+        alert("Please allow geolocation access");
+    }
+}
