@@ -38,3 +38,8 @@ function error(error) {
     }
 
 }
+
+const directions = new MapboxDirections({
+  accessToken: 'eyJ1IjoiYXJvcmFhcmFuIiwiYSI6ImNsb3QzdXV3MDA2MjAybG82Y3NlaGZxZTUifQ.L0hJIwM_Lhr2zaQwEcAOpw'
+});
+map.addControl(directions, 'top-left');
