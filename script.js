@@ -22,4 +22,9 @@ function success(position) {
     marker = L.marker([latitude, longitude]).addTo(map);
     circle = L.circle([latitude, longitude], { radius: accuracy }).addTo(map);
 
+    if (!zoomed) {
+        zoomed = map.fitBounds(circle.getBounds()); 
+    }
+
+
 }
