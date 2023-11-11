@@ -20,8 +20,15 @@ function success(position) {
         map.removeLayer(circle);
     }
 
-    marker = L.marker([latitude, longitude]).addTo(map);
+        const custom_icon= L.icon({
+                    iconUrl: 'images/green-pin.png',
+                    iconSize: [29, 29],
+                    popupAnchor: [0, -29]
+                });
+
+    marker = L.marker([latitude, longitude], {icon: custom_icon}).addTo(map);
     circle = L.circle([latitude, longitude], { radius: accuracy }).addTo(map);
+
 
     if (!zoomed) {
         zoomed = map.fitBounds(circle.getBounds()); 
