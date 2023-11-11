@@ -6,6 +6,7 @@ const map = L.map('map').setView([51.505, -0.09], 13);
 
 
 let marker, circle, zoomed;
+const latitude = 0, longitude = 0, accuracy = 0;
 
 navigator.geolocation.watchPosition(success, error);
 function success(position) {
