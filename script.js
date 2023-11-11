@@ -29,6 +29,15 @@ function success(position) {
 
     map.setView([latitude, longitude]);
 
+    L.Routing.control({
+    waypoints: [
+        L.latLng(latitude, longitude),
+        L.latLng(49.2827, -123.116226)
+    ],
+    routeWhileDragging: true,
+    geocoder: L.Control.Geocoder.nominatim()
+}).addTo(map);
+
 }
 function error(error) {
 
