@@ -49,3 +49,8 @@ function error(error) {
 
 }
 
+const geocoder = L.Control.geocoder({
+  defaultMarkGeocode: false
+})
+  
+  
